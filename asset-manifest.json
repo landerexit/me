@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/me/static/css/main.224788d2.css",
-    "main.js": "/me/static/js/main.eee5035b.js",
+    "main.css": "/me/static/css/main.44b111ba.css",
+    "main.js": "/me/static/js/main.c1fc1a78.js",
     "static/media/avatar.png": "/me/static/media/avatar.e99d42cf91b4f9b12fdd.png",
     "static/media/prisoner.jpg": "/me/static/media/prisoner.2409021522c819169185.jpg",
     "static/media/order.jpg": "/me/static/media/order.3589a0365f514dfcd88f.jpg",
@@ -15,7 +15,6 @@
     "static/media/window.svg": "/me/static/media/window.32050a2f7cf8a67f5a3f6a2b2e9d6398.svg",
     "static/media/cross.svg": "/me/static/media/cross.f22d0e75b0e36a8a10fe81f4dc9fb1a7.svg",
     "static/media/planet.svg": "/me/static/media/planet.7858dddd16e63c7426a8ba275bf325c4.svg",
-    "static/media/start-1.svg": "/me/static/media/start-1.0702fa9f695696892f4f.svg",
     "static/media/vk.svg": "/me/static/media/vk.d62e31c65b20612633a08f0e7b80ffa4.svg",
     "index.html": "/me/index.html",
     "static/media/habr.svg": "/me/static/media/habr.8c35d6751ac7393f4f95ddd154efcf53.svg",
@@ -23,11 +22,11 @@
     "static/media/tg.svg": "/me/static/media/tg.19fddf7bfcf813ad391ceaf4d0136647.svg",
     "static/media/card.svg": "/me/static/media/card.9e907b7f159f19ff1f25c6e613ba1d8f.svg",
     "static/media/burger.svg": "/me/static/media/burger.5feabfdd4106bc500de2c2d3ab36c2e3.svg",
-    "main.224788d2.css.map": "/me/static/css/main.224788d2.css.map",
-    "main.eee5035b.js.map": "/me/static/js/main.eee5035b.js.map"
+    "main.44b111ba.css.map": "/me/static/css/main.44b111ba.css.map",
+    "main.c1fc1a78.js.map": "/me/static/js/main.c1fc1a78.js.map"
   },
   "entrypoints": [
-    "static/css/main.224788d2.css",
-    "static/js/main.eee5035b.js"
+    "static/css/main.44b111ba.css",
+    "static/js/main.c1fc1a78.js"
   ]
 }
