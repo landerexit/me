@@ -1,0 +1,236 @@
+@import '../../_vars'
+
+.planet
+    position: relative
+
+    border-radius: 50%
+
+    background-color: #aa2d35
+
+    width: 15rem
+    height: 15rem
+
+    overflow: hidden
+
+    &__background-stars-1
+        position: absolute
+        background: url('../../../images/animations/start-1.svg')
+        background-repeat: repeat
+
+    &__wrapper
+        position: relative
+
+        border-radius: .5rem
+
+        width: 45rem
+        height: 45rem
+
+        user-select: none
+
+    &__meteor
+        background-color: #FFCE54
+
+        height: 43%
+        width: 100%
+
+        border-radius: 2rem
+
+        &__path
+            position: absolute
+
+            left: -3%
+            top: 50%
+
+            width: 2rem
+            height: 4rem
+
+            transform: rotate(-190deg)
+
+            border-radius: 2rem
+
+            padding: $gap-100
+
+            background: linear-gradient(#E9573F 50%, #e9563f00)
+
+    &__moon
+        overflow: hidden
+
+        position: absolute
+        border-radius: 50%
+
+        left: -3rem
+        top: calc(50% - 6rem)
+
+        width: 6rem
+        height: 6rem
+
+        background-color: rgb(194, 194, 194)
+
+        animation: 20s orbitalStill infinite linear
+
+        &__texture
+            position: absolute
+            background-color: rgb(148, 148, 148)
+
+            &__wrapper
+                position: relative
+                width: 100%
+                height: 100%
+
+                transform: translateX(100%)
+
+                animation: 7s shadowMoving infinite linear
+
+            &-1
+                width: 1rem
+                height: .8rem
+                top: 40%
+                left: 70%
+                border-radius: 50%
+
+            &-2
+                width: 2rem
+                height: .8rem
+                top: 55%
+                left: 50%
+                border-radius: 1rem
+
+            &-3
+                width: 1.5rem
+                height: .8rem
+                top: 25%
+                left: 50%
+                border-radius: 1rem
+
+    &__orbit
+        position: relative
+
+        width: 100%
+        height: 100%
+
+        &-1
+            animation: 20s orbitalMovement infinite linear
+        &-2
+            animation: 9s orbitalMovement infinite linear reverse
+
+        &__wrapper
+            position: absolute
+
+            border-radius: 50%
+            border: 2px solid white
+
+            &-1
+                width: 35rem
+                height: 35rem
+            &-2
+                width: 24rem
+                height: 24rem
+
+    &__shadow
+        position: absolute
+
+        border-radius: 50%
+
+        width: 100%
+        height: 100%
+
+        top: 0%
+        transform: translateX(100%)
+
+        animation: 15s shadowMoving infinite linear
+
+        &__moon
+            background-color: white
+
+        &__planet
+            background-color: $clr-text-1
+
+    &__cloud
+        height: 1.25rem
+        width: 5rem
+
+        opacity: .9
+
+        background-color: $clr-text-3
+
+        border-radius: 2rem
+
+        &-group-1
+            position: absolute
+
+            top: 50%
+            transform: translateX(calc(100% + 9rem))
+
+            animation: linear 8s textureMoving-1 infinite
+
+            &-1
+                margin-left: $gap-300
+
+        &-group-2
+            position: absolute
+
+            top: 10%
+            transform: translateX(calc(100% + 9rem))
+
+            animation: linear 8s textureMoving-2 infinite
+
+            &-1
+                width: 7rem
+                margin-left: 1rem
+            &-2
+                width: 9rem
+            &-3
+                width: 6rem
+                margin-left: 2rem
+
+        &-group-3
+            position: absolute
+
+            bottom: 0%
+            transform: translateX(calc(100% + 9rem))
+
+            animation: 8s linear 4s textureMoving-2 infinite
+
+            &-1
+                width: 4rem
+                margin-left: 1rem
+            &-2
+                width: 6rem
+            &-3
+                width: 3rem
+                margin-left: 2rem
+
+        &-group-4
+            position: absolute
+
+            top: 50%
+            transform: translateX(calc(100% + 9rem))
+
+            animation: 8s linear 4s textureMoving-1 infinite
+
+            &-1
+                margin-left: $gap-300
+
+@keyframes textureMoving-1
+    0%
+        transform: translateX(-9rem)
+
+@keyframes textureMoving-2
+    0%
+        transform: translateX(-100%)
+
+@keyframes shadowMoving
+    0%
+        transform: translateX(-100%)
+
+@keyframes orbitalMovement
+    0%
+        transform: rotate(0deg)
+    100%
+        transform: rotate(360deg)
+
+@keyframes orbitalStill
+    0%
+        transform: rotate(360deg)
+    100%
+        transform: rotate(0deg)

@@ -1,0 +1,28 @@
+@import '../_vars'
+
+.popup
+    position: absolute
+    width: 100%
+    height: 100%
+
+    overflow: hidden
+
+    z-index: 10000
+
+    background-color: rgba(0, 0, 0, 90%)
+
+    animation: .5s popupAppear
+
+    & > *+*
+        margin-top: $gap-700
+
+    &__button
+        font-size: 1.75rem
+        padding: $gap-400 $gap-500
+
+@keyframes popupAppear
+    0%
+        opacity: 0
+
+    100%
+        opacity: 1

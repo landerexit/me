@@ -1,0 +1,40 @@
+@import '../_vars'
+
+.headline
+    font-size: 3rem
+    font-weight: bold
+    font-style: italic
+
+    user-select: none
+
+    color: $clr-secondary-800
+    filter: contrast(150%)
+
+    padding: $gap-700 6rem
+
+    & > *+*
+        &:hover
+            padding-left: 1rem
+
+    &__letter
+        transition-duration: 200ms
+
+.me .headline
+    padding: $gap-300 6rem
+
+@media screen and ( min-width: 0px ) and ( max-width: 1023px)
+    .headline
+        padding: $gap-300 0 $gap-600 0
+
+        text-align: center
+
+        font-style: normal
+        font-size: 2.75rem
+
+    .me .headline
+        font-size: 3.5rem
+        padding: $gap-300 6rem
+        margin-bottom: 0
+
+        text-align: initial
+        font-style: italic
