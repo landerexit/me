@@ -8,7 +8,7 @@ function DropMenu(props) {
             content: [
                 {
                     name: "Главная",
-                    link: "me",
+                    link: "main",
                 },
 
                 {

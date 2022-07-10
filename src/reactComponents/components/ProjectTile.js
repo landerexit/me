@@ -32,21 +32,14 @@ const ProjectTile = inject("ButtonsStore")(
                     </p>                
                     <div className="project-tile__buttons">
                         { type !== 'animation' ?  
-                            <>
-                                <button
-                                    className='secondary-button project-tile__button'
-                                >
-                                    Скриншоты
-                                </button>
-                                <a
-                                    href={project.link}
-                                    target="_blank"
-                                    rel="noopener noreferrer nofollow"
-                                    className='primary-button project-tile__button'
-                                >
-                                    Посетить сайт
-                                </a>
-                            </>
+                            <a
+                                href={project.link}
+                                target="_blank"
+                                rel="noopener noreferrer nofollow"
+                                className='primary-button project-tile__button'
+                            >
+                                Посетить сайт
+                            </a>
     
                             :
     

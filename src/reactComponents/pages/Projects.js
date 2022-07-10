@@ -19,12 +19,6 @@ const Projects = inject()(
                 description: 'Личный сайт',
                 logo: meLogo,
                 link: 'https://landerexit.github.io/me',
-                screenshots: [
-                    {
-                        image: '',
-                        description: '',
-                    },
-                ]
             },
             
             {
@@ -32,12 +26,6 @@ const Projects = inject()(
                 description: 'Демонстрационный NFT-магазин',
                 logo: lanftLogo,
                 link: 'https://landerexit.github.io/lanft',
-                screenshots: [
-                    {
-                        image: '',
-                        description: '',
-                    },
-                ]
             },
 
             {
@@ -45,12 +33,6 @@ const Projects = inject()(
                 description: 'Визитная карточка',
                 logo: cardLogo,
                 link: 'https://landerexit.github.io/personalCard',
-                screenshots: [
-                    {
-                        image: '',
-                        description: '',
-                    },
-                ]
             },
         ]
 

@@ -35,8 +35,8 @@ const App = inject( "ButtonsStore" )(
       <div className="flex flex-justify-center wrapper main__wrapper">
         <main className="flex main">
           <Routes location={location} key={location.pathname}>
-            <Route path="/" element={<Navigate to='me'/>}/>
-            <Route path="me" element={<Me />}/>
+            <Route path="/" element={<Navigate to='main'/>}/>
+            <Route path="main" element={<Me />}/>
             <Route path="about" element={<About />}/>
             <Route path="contact" element={<Contact />}/>
   
