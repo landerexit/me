@@ -4,7 +4,7 @@
 
 Front-End Web Developer
 
-# Технологии
+# Задействованные технологии
 
 JS, HTML+CSS, БЭМ, Адаптивно-отзывчивая верстка, Sass, React, MobX. 
 
