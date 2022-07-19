@@ -6,7 +6,7 @@ Front-End Web Developer
 
 # Технологии
 
-JS, HTML+CSS, БЭМ, Адаптивно-отзывчивая верстка, Sass, React, MobX, framer-motion. 
+JS, HTML+CSS, БЭМ, Адаптивно-отзывчивая верстка, Sass, React, MobX. 
 
 База данных пользователей хранится на стороне клиента, в local storage, за исключением загружаемых изображений пользователем. 
 
