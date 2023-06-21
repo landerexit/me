@@ -1,46 +1,81 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
-function Header() {
+import './_header.sass'
+
+import logoImg from './img/logo.png'
+
+function Header(props) {
+    const location = useLocation().pathname;
+
+    const languageSign = props.language ? "РУС" : "ENG"
+
+    const tabs = 
+    [
+        {
+            path: "/",
+            ruText: "Домой",
+            enText: "Home"
+        }, 
+        {
+            path: "/about", 
+            ruText: "Обо мне",
+            enText: "About"
+        }, 
+        {
+            path: "/projects", 
+            ruText: "Проекты",
+            enText: "Projects"
+        },
+    ]
+    
     return (
-        <header className="header">
+        <header className="header flex items-center justify-center">
 
-            <nav className="header__wrapper flex align-center justify-between">
-                <img 
+            <nav className="header__wrapper flex items-center justify-between">
+                <Link 
                     className="header__logo"
-                    src=""
-                    alt="" 
-                />
+                    to="/"
+                >
+                    <img 
+                        src={logoImg}
+                        alt="" 
+                    />
+                </Link>
 
-                <ul className="flex align-center justify-center">
-                    <li>
-                        <Link to="/"/>
-                    </li>
-                    <li>
-                        <Link to="about"/>
-                    </li>
-                    <li>
-                        <Link to="animations"/>
-                    </li>
-                </ul>
+                <div className="header__nav flex align-center justify-center text-second">
+                    {
+                        tabs.map( (tab, tabKey) =>{
+                            return (
+                                <Link 
+                                    className={
+                                        "header__link header__link__" + 
+                                        tab.path + 
+                                        (location === tab.path ? " header__link__highlight" : "")
+                                    }
 
-                <div className="header__buttons">
-                    <button className="header__language">
+                                    to={tab.path}
+                                    key={tabKey}
+                                >
+                                    {props.language ? tab.ruText : tab.enText}
+                                </Link>
+                            )
+                        })
+                    }
+                </div>
 
+                <div className="header__buttons flex items-center">
+                    <button 
+                        className="header__language"
+                        onClick={props.changeLanguage}
+                    >
+                        {languageSign}
+                    </button>                
+                    <button
+                        className="header__theme"
+                        onClick={props.changeTheme}
+                    >
                     </button>
-                    <button className="header__theme">
-                        <img
-                            className="header__theme-img"
-                            src=""
-                            alt="" 
-                        />
-                    </button>
-                    <div className="header__languages">
-
-                    </div>
-                    <div className="header__">
-
-                    </div>
                 </div>
             </nav>
         </header>

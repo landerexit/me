@@ -9,9 +9,11 @@ import {
 
 import './styles/styles.sass'
 
-import Home from './pages/Home/Home';
 import PageWrapper from './pages/PageWrapper';
 
+import Home from './pages/Home/Home';
+import About from './pages/About/About';
+import Projects from './pages/Projects/Projects';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -19,6 +21,8 @@ const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path='/' element={<PageWrapper/>}>
       <Route index element={<Home/>}/>
+      <Route path='About' element={<About/>}/>
+      <Route path='Projects' element={<Projects/>}/>
     </Route>
   )
 )

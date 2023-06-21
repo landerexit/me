@@ -1,0 +1,83 @@
+.header
+    width: 100%
+
+    position: sticky
+    top: 0
+
+    background-color: var(--color-bg-header)
+    backdrop-filter: blur(12px)
+
+    &__wrapper
+        position: relative
+        max-width: var(--screen-width)
+        width: 100%
+
+        padding: .5rem 0
+
+        font-size: .875rem
+        line-height: 1.25rem
+
+    &__logo
+        border-radius: 50%
+        overflow: hidden
+
+        height: var(--size-header-buttons)
+        width: var(--size-header-buttons)
+
+        & > img
+            height: 100%
+            width: 100%
+
+    &__nav
+        position: absolute
+        right: 0
+        left: 0
+        gap: 1rem
+
+    &__link
+        padding: .5rem 1rem
+        border-radius: 20px
+
+        font-weight: 500
+
+        transition-duration: var(--speed-ui)
+
+        &:hover
+            color: var(--color-text-1)
+
+        &__highlight
+            color: var(--color-text-1)
+            background-color: var(--color-bg-2)
+
+    &__language
+        border-radius: 50%
+
+        transition-duration: var(--speed-ui)
+        color: var(--color-text-2)
+
+        font-weight: 600
+
+        &:hover
+            color: var(--color-text-1)
+
+    &__buttons
+        gap: .5rem
+
+    &__theme
+        height: calc( var(--size-header-buttons) - 1.25rem )
+        width: calc( var(--size-header-buttons) - 1.25rem )
+
+        background: url("./img/sun.svg")
+        background-position: center
+        background-size: contain
+
+        opacity: 60%
+
+        &:hover
+            opacity: 100%
+            transition-duration: var(--speed-ui)
+
+        .dark-theme &
+            background: url("./img/moon.svg")
+            background-position: center
+            background-size: contain
